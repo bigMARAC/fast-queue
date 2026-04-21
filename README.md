@@ -104,4 +104,10 @@ O sistema exige as seguintes chaves em cada serviço:
 - `ALLOWED_ORIGINS`: Lista de domínios permitidos pelo CORS.
 
 ---
+
+## 🖊️ System Design
+
+![System Design Imagem](./system_design.png)
+
+---
 **Desenvolvido como projeto de Arquitetura de Software Sênior por Marcos E. da Silva.**
