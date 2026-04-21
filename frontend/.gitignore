@@ -1,0 +1,18 @@
+# --- DEPENDENCIES ---
+node_modules/
+.pnp
+.pnp.js
+
+# --- BUILD OUTPUT ---
+dist/
+dist-ssr/
+*.local
+
+# --- ENVIRONMENTS ---
+.env
+.env.development
+.env.production
+.env.*.local
+
+# --- FIREBASE ---
+.firebase/

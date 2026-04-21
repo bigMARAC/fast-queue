@@ -1,0 +1,40 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/v1/queues/**",
+        "run": {
+          "serviceId": "queue-service",
+          "region": "southamerica-east1"
+        }
+      },
+      {
+        "source": "/v1/payments/**",
+        "run": {
+          "serviceId": "payment-service",
+          "region": "southamerica-east1"
+        }
+      },
+      {
+        "source": "/v1/search/**",
+        "run": {
+          "serviceId": "search-service", 
+          "region": "southamerica-east1"
+        }
+      },
+      {
+        "source": "/v1/search",
+        "run": {
+          "serviceId": "search-service",
+          "region": "southamerica-east1"
+        }
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
